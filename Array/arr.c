@@ -1,11 +1,17 @@
 //
 // Created by Tao on 11/3/19.
 //
+
 #include <stdio.h>
 
-void HelloWorld(){
-    printf("Hello world,TianTong");
-    printf("\n");
-}
+typedef struct  _Array
+{
+    int* data[10];
+    int* size;
+}Array;
+
+
+
+
 
 

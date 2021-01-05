@@ -54,16 +54,18 @@ CMAKE_BINARY_DIR = /Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-de
 
 # The main recursive "all" target.
 all: CMakeFiles/DataStructure.dir/all
+all: googletest/googletest/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/DataStructure.dir/clean
+clean: googletest/googletest/clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: googletest/googletest/preinstall
 
 .PHONY : preinstall
 
@@ -93,6 +95,80 @@ DataStructure: CMakeFiles/DataStructure.dir/rule
 CMakeFiles/DataStructure.dir/clean:
 	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/clean
 .PHONY : CMakeFiles/DataStructure.dir/clean
+
+#=============================================================================
+# Directory level rules for directory googletest/googletest
+
+# Recursive "all" directory target.
+googletest/googletest/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+googletest/googletest/all: googletest/googletest/CMakeFiles/gtest.dir/all
+
+.PHONY : googletest/googletest/all
+
+# Recursive "clean" directory target.
+googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/clean
+googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest.dir/clean
+
+.PHONY : googletest/googletest/clean
+
+# Recursive "preinstall" directory target.
+googletest/googletest/preinstall:
+
+.PHONY : googletest/googletest/preinstall
+
+#=============================================================================
+# Target rules for target googletest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target gtest_main"
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target gtest"
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tao/Projects/Workspaces/C/DataStructure/cmake-build-debug/CMakeFiles 0
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: googletest/googletest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
